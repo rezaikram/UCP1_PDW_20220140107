@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jual motor bekas</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* minimal custom CSS */
+        body {
+            background-color: #f5f5f5;
+        }
+       .motorbg {
+            background-image: url('motor.jpg');
+            background-size: cover;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <section class="navbar-section">
+        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+            <a class="navbar-brand me-auto" href="#">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fa-solid fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#About">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Product">Product</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#Product" role="button" data-bs-toggle="dropdown" aria-expanded="false">Item</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #b3a6a4;">
+                            <li><a class="dropdown-item" href="./Aerox bekas 2022.webp" target="_blank">aerox 2022</a></li>
+                            <li><a class="dropdown-item" href="./MX king 150.jpg" target="_blank">MX king 150</a></li>
+                            <li><a class="dropdown-item" href="./vario 125.jpg" target="_blank">vario 125</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#FAQ">FAQ</a>
+                    </li>
+                </ul>
+                <span id="current-time" class="navbar-text" style="font-family: Rubik, sans-serif;"></span>
+            </div>
+        </div>
+    </nav>
+</section>
+    <!-- Hero Section -->
+    <div class="motorbg">
+        <div class="container">
+            <h1 class="display-3">Selamat datang di web penjualan motor bekas</h1>
+            <p class="lead">silahkan memilih motor impian anda</p>
+        </div>
+    </div>
+
+    <!-- Accordion Section -->
+    <div class="container">
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            dalam web ini terdapat beberapa motor bekas berkualitas yang kami jual
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        This website is a demonstration of various web development techniques, including the use of Bootstrap, HTML, CSS, and JavaScript.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            How was this website built?
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        This website was built using Bootstrap, HTML, CSS, and JavaScript. The navbar, accordion effect, and image were added using Bootstrap classes and HTML tags. The paragraph was addedusing HTML tags, and the current time was added using JavaScript.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Section -->
+    <div class="container">
+        <img src="/Aerox bekas 2022.webp" alt="Motorcycle" class="img-fluid">
+        <img src="/MX king 150.jpg" alt="Motorcycle" class="img-fluid">
+        <img src="/vario 125.jpg" alt="Motorcycle" class="img-fluid">
+        <img src="/vario 150 2018.jpg" alt="Motorcycle" class="img-fluid">
+    </div>
+
+    <!-- Paragraph Section -->
+    <div class="container">
+        <p>This is a sample paragraph for demonstration purposes. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <!-- Current Time Section -->
+    <div class="container">
+        <p id="currentTime"></p>
+    </div>
+
+    <!-- jQuery, Popper.js, and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+        // Get the current time and display it on the page
+        function updateTime() {
+            var now = new Date();
+            var hours = now.getHours().toString().padStart(2, "0");
+            var minutes = now.getMinutes().toString().padStart(2, "0");
+            var seconds = now.getSeconds().toString().padStart(2, "0");
+            var timeString = hours + ":" + minutes + ":" + seconds;
+            document.getElementById("currentTime").innerHTML = "Current time: " + timeString;
+        }
+
+        // Update the time every second
+        setInterval(updateTime, 1000);
+    </script>
+</body>
+</html>
